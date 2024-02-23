@@ -1,0 +1,7 @@
+body{
+    background: blue !important;
+}
+
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+  }

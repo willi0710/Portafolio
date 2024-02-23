@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    
+    {% extends 'base.html'%}
+    
+    {% block content %}
+
+    {% load static %}
+    <header class="row bg-primary-subtle">
+        <div class="col-md-3 my-3 ">
+            <img src="{% static 'miPortafolio/FOTO_W.jpg'%}" alt="" width="250" height="300">
+        </div>
+        <div class="col-md-8 my-5">
+            <div class="card my-3">
+                <div class="card-body p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                    <h1 class="text-center">WILLIAM GONZALEZ ONATRA</h1>
+                    <p>Ingeniero de sistemas con Especialización en seguridad Informática y Tecnólogo en análisis y desarrollo de sistemas de información, soy una persona íntegra, con alto sentido de la responsabilidad, compromiso y honestidad, con capacidades para trabajar en equipo y criterio para apoyar la toma de decisiones, que permitan responder a las necesidades tecnológicas y optimización de los procesos en la empresa.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row primary-border-subtle">
+        <div class="col-md-6 my-3" >
+            <div class="card">
+                <div class="card-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                    <h4 class="text-center">Habilidades</h4>
+                    <ul>
+                        <li>Desarrollo Empresarial</li>
+                        <li>Comunicación técnica y no técnica</li>
+                        <li>Resolución de problemas</li>
+                        <li>Gestion de Equipos</li>
+                        <li>Adaptación al cambio</li>
+                        <li>Manejo ofimática</li>
+                        <li>Plataformas tecnológicas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 my-3">
+            <div class="card">
+                <div class="card-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                    <h4 class="text-center">Educación</h4>
+                    <ul>
+                        <li>Especialización en seguridad Informática</li>
+                        <li>Ingeniero de Sistemas</li>
+                        <h6>Universidad Nacional Abierta y a Distancia UNAD</h6><br>
+                        <li>Tecnólogo en Análisis y desarrollo de sistemas de información</li>
+                        <h6>Servicio Nacional de Aprendizaje SENA</h6><br>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    {% endblock%}
+</body>
+</html>
