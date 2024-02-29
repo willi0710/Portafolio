@@ -12,7 +12,7 @@
     {% block content %}
 
     {% load static %}
-    <header class="row bg-primary-subtle">
+    <header class="row bg-card-body p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
         <div class="col-md-3 my-3 ">
             <img src="{% static 'miPortafolio/FOTO_W.jpg'%}" alt="" width="200" height="250">
         </div>
@@ -22,8 +22,8 @@
                     <h1 class="text-center">WILLIAM GONZALEZ ONATRA</h1>
                     <p>Ingeniero de sistemas con especialización en seguridad informática y tecnólogo en análisis y desarrollo de sistemas de información, con amplia experiencia en liderazgo de personal y equipos de trabajo, mis capacidades y conocimientos permiten apoyar la toma de decisiones, contribuyendo a la optimización de los recursos y procesos en las empresas.</p>
                     <h6>Contacto: +57 3108266473  +34 664462959</h6>
-                    <a href="https://www.linkedin.com/in/william-gonz%C3%A1lez-onatra-113825232/">LinkedIn</a>
-                    <a href="https://github.com/willi0710/Portafolio">Github</a>
+                    <a href="https://www.linkedin.com/in/william-gonz%C3%A1lez-onatra-113825232/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/willi0710/Portafolio" target="_blank">Github</a>
 
                 </div>
             </div>
@@ -57,22 +57,27 @@
         <div class="col-md-6 my-3">
             <div class="card">
                 <div class="card-body p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-                    <h4 class="text-center">Educación</h4>
+                    <h4 class="text-center">Educación</h4><br>
                     <ul class="lista-sin-viñetas">
                         <h6>Universidad Nacional Abierta y a Distancia UNAD</h6>
                         <li>Especialización en seguridad Informática</li>
                         <li>01/2024</li><br>
+                        <h6>Universidad Nacional Abierta y a Distancia UNAD</h6>
                         <li>Ingeniero de Sistemas</li>
                         <li>08/2023</li><br>                        
                         <h6>Servicio Nacional de Aprendizaje SENA</h6>
                         <li>Tecnólogo en Análisis y desarrollo de sistemas de información</li>
-                        <li>03/2020</li> <br>                     
+                        <li>03/2020</li><br> 
+                        <h6>Universidad Nacional Abierta y a Distancia UNAD</h6>
+                        <li>Ingles B1</li>
+                        <li>08/2023</li><br>                
                     </ul>
                 </div>
             </div>
         </div>
         
     </div>
+    
     {% endblock%}
 </body>
 </html>

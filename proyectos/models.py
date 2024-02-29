@@ -8,3 +8,6 @@ class Proyecto(models.Model):
     link = models.URLField(verbose_name='Direccion web', null=True, blank=True)
     created= models.DateTimeField(auto_now_add = True, verbose_name='Creacion')
     updated = models.DateTimeField(auto_now = True, verbose_name='Actualizacion')
+    
+    def __str__(self):
+        return self.title
