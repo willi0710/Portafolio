@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+
+
+    <div class="row">
+        
+        {% for proy in projects %}
+        
+        <div class="col-md-4 p-3">
+            <div class="card">
+                <img src="{{proy.image.url}}" alt="{{proy.title}}" class="img-fluid">
+                <div class="card-body">
+                    <h2>{{proy.title}}</h2> 
+                    <p>{{proy.created}}</p>
+                    <p class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">{{proy.description}}</p>
+                        {% if proy.link %}
+                                <a href="{{proy.link}}" class="" target="_blank">{{proy.link}}</a>
+                        {% endif %}
+                    
+                    <p>{{pory.updated}}</p>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>      
+
+    {% endblock %}
+    
+</body>
+</html>
