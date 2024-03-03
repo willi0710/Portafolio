@@ -1,4 +1,4 @@
-###Mi portafolio en Django y Python
+Mi portafolio en Django y Python
 
 Creacion del Proyecto miPortafolio
 - D:\DJANGO>mkdir miPortafolio
@@ -7,14 +7,13 @@ Creacion del Proyecto miPortafolio
 - D:\DJANGO\miPortafolio>code .
 
 vamos a visual estudio code
-
 - PS D:\DJANGO\miPortafolio>.\env\Scripts\activate
 - (env) PS D:\DJANGO\miPortafolio>
 - (env) PS D:\DJANGO\miPortafolio>djando-admin startproject django_portfolio .   para crear la raiz del proyecto con lo que aparece manage.py
 - (env) PS D:\DJANGO\miPortafolio>python manage.py startapp blog  para crear el blog
 - env) PS D:\DJANGO\miPortafolio>python manage.py startapp portafolio    para crear el portafolio
 
-#####despliegue de mi portafolio en PYTHONANYWHERE.COM
+despliegue de mi portafolio en PYTHONANYWHERE.COM
 
 - https://willis0211.pythonanywhere.com/
 
