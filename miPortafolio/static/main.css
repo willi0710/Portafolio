@@ -6,4 +6,6 @@ body{
     list-style-type: none; /* Elimina las viñetas */
   }
 
-  
+  body {
+    padding-top: 56px; /* Ajusta según la altura real del navbar */
+  }
