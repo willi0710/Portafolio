@@ -22,12 +22,14 @@
                 <img src="{{proy.image.url}}" alt="{{proy.title}}" class="img-fluid">
                 <div class="card-body">
                     <h2>{{proy.title}}</h2> 
-                    <p>{{proy.created}}</p>
-                    <p class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">{{proy.description}}</p>
-                        {% if proy.link %}
-                                <a href="{{proy.link}}" class="" target="_blank">{{proy.link}}</a>
-                        {% endif %}       
-                    <p>{{pory.updated}}</p>
+                    <p>Creado: {{proy.created}}</p>
+                    <p>Actualizado: {{ proy.updated|date:"d M Y H:i" }}</p>
+                    <p class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">{% if proy.link %}
+                        <a href="{{proy.link}}" class="" target="_blank">{{proy.link}}</a>
+                    {% endif %} <br><br>
+                    {{proy.description}}
+                              
+                    </p>
                 </div>
             </div>
         </div>
